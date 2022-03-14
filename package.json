@@ -1,0 +1,24 @@
+{
+  "name": "yard-sale",
+  "version": "1.0.0",
+  "description": "FrontEnd para aplicación de ventas de garage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pahoalapizco/yard-sale.git"
+  },
+  "keywords": [],
+  "author": "Paola Alapizco <paolac.alapizco@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pahoalapizco/yard-sale/issues"
+  },
+  "homepage": "https://github.com/pahoalapizco/yard-sale#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
