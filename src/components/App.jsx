@@ -1,5 +1,18 @@
 import React from "react";
 
-const App = () => <h1>Hello From Ract Yard Sale!! :D</h1>;
+// Containers
+import Layout from "../containers/Layout.jsx";
+import Login from "../containers/Login.jsx";
+
+// Styles
+import '../styles/global.css';
+
+const App = () => {
+  return (
+    <Layout>
+      <Login />
+    </Layout>
+  );
+};
 
 export default App;
