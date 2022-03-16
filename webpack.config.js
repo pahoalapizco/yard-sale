@@ -4,10 +4,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 const {
   ruleForJavaScript,
   rulesForHtml,
   rulesForCss,
+  rulesForImages,
 } = require("./webpack_rules/rules.js");
 
 module.exports = {
@@ -15,6 +18,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
+    publicPath: "/",
   },
   resolve: {
     extensions: [".js", ".jsx"],
@@ -25,6 +29,7 @@ module.exports = {
       ruleForJavaScript,
       rulesForHtml,
       rulesForCss,
+      rulesForImages,
     ],
   },
   plugins: [
@@ -37,6 +42,14 @@ module.exports = {
       filename: "[name].css",
     }),
     new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src", "assets"),
+          to: "assets",
+        }
+      ]
+    }),
   ],
   optimization: {
     minimize: true,

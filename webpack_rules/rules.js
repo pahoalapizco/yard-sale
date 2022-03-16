@@ -21,8 +21,14 @@ const rulesForCss = {
   ]
 };
 
+const rulesForImages = {
+  test: /\.(png|jpg|svg)$/,
+  type: "asset/resource",
+};
+
 module.exports =  {
   ruleForJavaScript,
   rulesForHtml,
   rulesForCss,
+  rulesForImages,
 };
