@@ -20,7 +20,7 @@ const MyOrder = () => {
   return (
     <div className="my-order">
       <div className="my-order-container">
-        <h1 className="title_left">My Order</h1>
+        <h1 className="title title_left">My Order</h1>
         <div className="my-order-content">
           <div className="order">
             <p>

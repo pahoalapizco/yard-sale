@@ -14,6 +14,7 @@ import MyOrder from './../containers/MyOrder';
 import Cart from './../containers/Cart';
 import MyOrders from "../containers/MyOrders.jsx";
 import Account from "../containers/Account.jsx";
+import Edit from "../containers/Edit.jsx";
 
 // Pages
 import Home from "../pages/Home.jsx";
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/orders" element={<MyOrders />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/edit" element={<Edit />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

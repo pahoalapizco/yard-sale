@@ -16,7 +16,7 @@ const MyOrders = () => {
   return (
     <div className="my-order">
       <div className="my-order-container">
-        <h1 className="title_left">My Orders</h1>
+        <h1 className="title title_left">My Orders</h1>
         <div className="my-order-content">
           {products.map(({ articles, total, date }) => (
             <Order articles={articles} total={total} date={date} />

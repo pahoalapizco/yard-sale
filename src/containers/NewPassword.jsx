@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
 // styles
-import '../styles/styles.scss';
+import "../styles/styles.scss";
 
 const NewPassword = () => {
   return (
@@ -13,7 +13,9 @@ const NewPassword = () => {
         <p className="subtitle">Enter a new password for your account</p>
 
         <form action="/" className="form">
-          <label for="password" className="label">Password</label>
+          <label for="password" className="label">
+            Password
+          </label>
           <input
             type="password"
             id="password"
@@ -21,7 +23,9 @@ const NewPassword = () => {
             className="input input-password"
           />
 
-          <label for="new-password" className="label">Re-enter password</label>
+          <label for="new-password" className="label">
+            Re-enter password
+          </label>
           <input
             type="password"
             id="new-password"
@@ -38,7 +42,7 @@ const NewPassword = () => {
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NewPassword
+export default NewPassword;

@@ -18,6 +18,9 @@
   margin-bottom: 12px;
   text-align: center;
 }
+.title_left {
+  text-align: left !important;
+}
 .subtitle {
   color: var(--very-light-pink);
   font-weight: 300;
@@ -43,6 +46,13 @@
   padding: 20px 6px;
   margin-bottom: 12px;
 }
+.value {
+  font-size: var(--md);
+  text-align: left;
+  font-weight: 300;
+  color: var(--very-light-pink);
+  margin: 8px 0 32px 0;
+}
 .form-container_pass {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -59,8 +69,8 @@
   margin-bottom: 4px;
 }
 .input-password,
-.input-email, 
-.input-name  {
+.input-email,
+.input-name {
   margin-bottom: 20px;
 }
 .primary-button {
@@ -99,8 +109,11 @@
   .logo {
     display: block;
   }
-  .form-container
-  {
+  .form-container,
+  .form-container_pass {
     height: 100%;
+  }
+  .form_space {
+    justify-content: space-between;
   }
 }
