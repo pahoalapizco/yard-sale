@@ -11,6 +11,8 @@ import RecoveryPassword from "../containers/RecoveryPassword.jsx";
 import NewPassword from "../containers/NewPassword.jsx";
 import Products from '../containers/Products.jsx';
 import MyOrder from './../containers/MyOrder';
+import Cart from './../containers/Cart';
+import MyOrders from "../containers/MyOrders.jsx";
 
 // Pages
 import Home from "../pages/Home.jsx";
@@ -30,6 +32,8 @@ const App = () => {
           <Route path="/recovery-password" element={<RecoveryPassword />} />
           <Route path="/products" element={<Products />} />
           <Route path="/my-order" element={<MyOrder />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/orders" element={<MyOrders />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
