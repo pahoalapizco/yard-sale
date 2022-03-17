@@ -9,10 +9,12 @@ import Layout from "../containers/Layout.jsx";
 import Login from "../containers/Login.jsx";
 import RecoveryPassword from "../containers/RecoveryPassword.jsx";
 import NewPassword from "../containers/NewPassword.jsx";
+import Products from '../containers/Products.jsx';
 
 // Pages
 import Home from "../pages/Home.jsx";
 import NotFound from "../pages/NotFound.jsx";
+
 // Styles
 import "../styles/global.css";
 
@@ -25,6 +27,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/password" element={<NewPassword />} />
           <Route path="/recovery-password" element={<RecoveryPassword />} />
+          <Route path="/products" element={<Products />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

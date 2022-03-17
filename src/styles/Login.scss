@@ -1,18 +1,11 @@
-@use './vars';
+@use "./vars";
 
-.login {
-  width: 100%;
-  height: 100vh;
-  /* Alinea el contenido al centro tanto horizontal como vertical */
-  display: grid;
-  place-items: center;
-}
-.form-container {
+.form-container_login {
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 300px;
 }
-.form-container div {
+.form-container_login div {
   display: flex;
   flex-direction: column;
 }
@@ -56,17 +49,6 @@
 .input-email {
   margin-bottom: 20px;
 }
-.primary-button {
-  background-color: var(--hospital-green);
-  color: var(--white);
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: var(--md);
-  width: 100%;
-  height: 48px;
-  cursor: pointer;
-}
 .login-button {
   margin-top: 16px;
   margin-bottom: 30px;
@@ -78,17 +60,6 @@
   text-align: center;
   font-size: var(--sm);
 }
-.secondary-button {
-  border: 1px solid var(--hospital-green);
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: var(--md);
-  color: var(--hospital-green);
-  width: 100%;
-  height: 48px;
-  background-color: var(--white);
-  cursor: pointer;
-}
 .singup-button {
   margin-top: 50px;
 }
@@ -96,10 +67,10 @@
   .logo {
     display: block;
   }
-  .form-container {
+  .form-container_login {
     height: 100%;
   }
-  .form-container div {
+  .form-container_login div {
     justify-content: space-between;
     height: 100%;
   }

@@ -2,18 +2,18 @@ import React from 'react'
 
 const NotFound = () => {
   return (
-    <div class="login">
-      <div class="form-container">
-        <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo" />
+    <div className="login">
+      <div className="form-container">
+        <img src="../assets/logos/logo_yard_sale.svg" alt="logo" className="logo" />
 
-        <h1 class="title">Sorry</h1>
-        <p class="subtitle">Page not found :(</p>
+        <h1 className="title">Sorry</h1>
+        <p className="subtitle">Page not found :(</p>
     
-        <div class="email-image">
+        <div className="email-image">
             <img src="../assets/img/404.png" alt="404 - Not Found" />
         </div>
 
-        <button class="primary-button login-button">Go Home</button>
+        <button className="primary-button login-button">Go Home</button>
     </div>
     </div>
   );

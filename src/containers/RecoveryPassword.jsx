@@ -1,12 +1,13 @@
 import React from "react";
 
 // Styles
+import '../styles/styles.scss';
 import '../styles/RecoveryPassword.scss';
 
 const RecoveryPassword = () => {
   return (
     <div className="login">
-      <div className="form-container">
+      <div className="form-container_email">
         <img src="../assets/logos/logo_yard_sale.svg" alt="logo" className="logo" />
 
         <h1 className="title">Email has been sent!</h1>
