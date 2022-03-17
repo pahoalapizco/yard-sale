@@ -2,7 +2,6 @@ import React from 'react'
 
 // styles
 import '../styles/styles.scss';
-import '../styles/NewPassword.scss';
 
 const NewPassword = () => {
   return (
