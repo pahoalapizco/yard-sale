@@ -10,6 +10,7 @@ import Login from "../containers/Login.jsx";
 import RecoveryPassword from "../containers/RecoveryPassword.jsx";
 import NewPassword from "../containers/NewPassword.jsx";
 import Products from '../containers/Products.jsx';
+import MyOrder from './../containers/MyOrder';
 
 // Pages
 import Home from "../pages/Home.jsx";
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/password" element={<NewPassword />} />
           <Route path="/recovery-password" element={<RecoveryPassword />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/my-order" element={<MyOrder />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
