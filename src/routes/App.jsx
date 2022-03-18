@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 // Containers
 import Layout from "../containers/Layout.jsx";
-import RecoveryPassword from "../containers/RecoveryPassword.jsx";
 import Products from '../containers/Products.jsx';
 import MyOrder from './../containers/MyOrder';
 import Cart from './../containers/Cart';
@@ -19,6 +18,7 @@ import Login from "../pages/Login.jsx";
 import CreateAccount from "../pages/CreateAccount.jsx";
 import MyAccount from "../pages/MyAccount.jsx";
 import NewPassword from "../pages/NewPassword.jsx";
+import SendEmail from "../pages/SendEmail.jsx";
 
 // Styles
 import "../styles/global.css";
@@ -32,7 +32,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/create-account" element={<CreateAccount />} />
           <Route path="/password" element={<NewPassword />} />
-          <Route path="/recovery-password" element={<RecoveryPassword />} />
+          <Route path="/recovery-password" element={<SendEmail />} />
           <Route path="/products" element={<Products />} />
           <Route path="/my-order" element={<MyOrder />} />
           <Route path="/cart" element={<Cart />} />

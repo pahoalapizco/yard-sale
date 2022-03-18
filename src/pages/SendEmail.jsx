@@ -3,13 +3,13 @@ import React from "react";
 // Components
 import Logo from "../components/Logo.jsx";
 // Styles
-import "../styles/styles.scss";
-import "../styles/RecoveryPassword.scss";
+// import "../styles/styles.scss";
+import "../styles/SendEmail.scss";
 
-const RecoveryPassword = () => {
+const SendEmail = () => {
   return (
-    <div className="login">
-      <div className="form-container_email">
+    <div className="SendEmail">
+      <div className="SendEmail-container">
         <Logo />
 
         <h1 className="title">Email has been sent!</h1>
@@ -31,4 +31,4 @@ const RecoveryPassword = () => {
   );
 };
 
-export default RecoveryPassword;
+export default SendEmail;
