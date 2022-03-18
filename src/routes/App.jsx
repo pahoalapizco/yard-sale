@@ -12,13 +12,13 @@ import Products from '../containers/Products.jsx';
 import MyOrder from './../containers/MyOrder';
 import Cart from './../containers/Cart';
 import MyOrders from "../containers/MyOrders.jsx";
-import Edit from "../containers/Edit.jsx";
 
 // Pages
 import Home from "../pages/Home.jsx";
 import NotFound from "../pages/NotFound.jsx";
 import Login from "../pages/Login.jsx";
 import CreateAccount from "../pages/CreateAccount.jsx";
+import MyAccount from "../pages/MyAccount.jsx";
 
 // Styles
 import "../styles/global.css";
@@ -37,7 +37,7 @@ const App = () => {
           <Route path="/my-order" element={<MyOrder />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/orders" element={<MyOrders />} />
-          <Route path="/edit" element={<Edit />} />
+          <Route path="/account" element={<MyAccount />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

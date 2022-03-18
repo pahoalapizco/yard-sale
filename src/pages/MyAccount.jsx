@@ -1,14 +1,14 @@
 import React from "react";
 
 // Styles
-import "../styles/styles.scss";
+import "../styles/MyAccount.scss";
 
-const Edit = () => {
+const MyAccount = () => {
   return (
-    <div className="login">
-      <div className="form-container_pass">
+    <div className="MyAccount">
+      <div className="MyAccount-container">
         <h1 className="title title_left">My account</h1>
-        <form action="/" className="form form_space">
+        <form action="/" className="MyAccount-form">
             <div>
               <label for="name" className="label">
                 Name
@@ -38,4 +38,4 @@ const Edit = () => {
   );
 };
 
-export default Edit;
+export default MyAccount;
