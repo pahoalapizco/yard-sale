@@ -7,7 +7,6 @@ import {
 // Containers
 import Layout from "../containers/Layout.jsx";
 import RecoveryPassword from "../containers/RecoveryPassword.jsx";
-import NewPassword from "../containers/NewPassword.jsx";
 import Products from '../containers/Products.jsx';
 import MyOrder from './../containers/MyOrder';
 import Cart from './../containers/Cart';
@@ -19,6 +18,7 @@ import NotFound from "../pages/NotFound.jsx";
 import Login from "../pages/Login.jsx";
 import CreateAccount from "../pages/CreateAccount.jsx";
 import MyAccount from "../pages/MyAccount.jsx";
+import NewPassword from "../pages/NewPassword.jsx";
 
 // Styles
 import "../styles/global.css";
