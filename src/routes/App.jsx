@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 // Containers
 import Layout from "../containers/Layout.jsx";
-import Login from "../containers/Login.jsx";
 import RecoveryPassword from "../containers/RecoveryPassword.jsx";
 import NewPassword from "../containers/NewPassword.jsx";
 import Products from '../containers/Products.jsx';
@@ -19,6 +18,7 @@ import Edit from "../containers/Edit.jsx";
 // Pages
 import Home from "../pages/Home.jsx";
 import NotFound from "../pages/NotFound.jsx";
+import Login from "../pages/Login.jsx";
 
 // Styles
 import "../styles/global.css";
