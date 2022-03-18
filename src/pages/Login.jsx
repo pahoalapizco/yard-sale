@@ -4,13 +4,13 @@ import React from "react";
 import Logo from "../components/Logo.jsx";
 
 // Styles
-import "../styles/styles.scss";
+// import "../styles/styles.scss";
 import "../styles/Login.scss";
 
 const Login = () => {
   return (
-    <div className="login">
-      <div className="form-container_login">
+    <div className="Login">
+      <div className="Login-container">
         <Logo />
 
         <div>

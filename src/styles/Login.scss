@@ -1,50 +1,106 @@
 @use "./vars";
 
-.form-container_login {
+.Login {
+  width: 100%;
+  height: 100vh;
+  /* Alinea el contenido al centro tanto horizontal como vertical */
+  display: grid;
+  place-items: center;
+}
+
+.Login-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 300px;
 }
-.form-container_login div {
+
+.Login-container div {
   display: flex;
   flex-direction: column;
 }
+
+.singup-button {
+  margin-top: 50px;
+}
+
+/* QUITAR ESTOS ESTILOS Y PASSARLOS A: styles, 
+PRIMERO VERIFICAR SI SE REUTILIZAN */
 .logo {
   width: 150px;
   margin-bottom: 48px;
   justify-self: center;
   display: none;
 }
-.title {
-  font-size: var(--lg);
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: var(--sm);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.input {
+  background-color: var(--text-input-field);
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  font-size: var(--md);
+  padding: 6px;
   margin-bottom: 12px;
-  text-align: center;
 }
-.subtitle {
-  color: var(--very-light-pink);
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 32px;
-  text-align: center;
+.input-password,
+.input-email {
+  margin-bottom: 20px;
 }
+.primary-button {
+  background-color: var(--hospital-green);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: var(--md);
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+}
+
+.login-button {
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
 .form a {
   color: var(--hospital-green);
   text-decoration: none;
   text-align: center;
   font-size: var(--sm);
 }
-.singup-button {
-  margin-top: 50px;
+
+.secondary-button {
+  border: 1px solid var(--hospital-green);
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: var(--md);
+  color: var(--hospital-green);
+  width: 100%;
+  height: 48px;
+  background-color: var(--white);
+  cursor: pointer;
 }
+
+/*SOLO QUITAR .logo */
 @media (max-width: 640px) {
   .logo {
     display: block;
   }
-  .form-container_login {
-    height: 100%;
+  .Login-container {
+      height: 100%;
   }
-  .form-container_login div {
-    justify-content: space-between;
-    height: 100%;
+  .Login-container div {
+      justify-content: space-between;
+      height: 100%;
   }
 }
