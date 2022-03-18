@@ -1,14 +1,16 @@
 import React from "react";
 
+// Components
+import Logo from "../components/Logo.jsx";
 // Styles
-import '../styles/styles.scss';
-import '../styles/RecoveryPassword.scss';
+import "../styles/styles.scss";
+import "../styles/RecoveryPassword.scss";
 
 const RecoveryPassword = () => {
   return (
     <div className="login">
       <div className="form-container_email">
-        <img src="../assets/logos/logo_yard_sale.svg" alt="logo" className="logo" />
+        <Logo />
 
         <h1 className="title">Email has been sent!</h1>
         <p className="subtitle">

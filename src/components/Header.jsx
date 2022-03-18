@@ -1,5 +1,8 @@
 import React from "react";
 
+// Components
+import Logo from "./Logo.jsx";
+
 // Styles
 import "../styles/Header.scss";
 
@@ -9,7 +12,7 @@ const Header = () => {
       <img src="../assets/icons/icon_menu.svg" alt="Menu" className="menu" />
 
       <div className="navbar-left">
-        <img src="../assets/logos/logo_yard_sale.svg" alt="logo" className="logo" />
+        <Logo />
 
         <ul>
           <li>

@@ -1,10 +1,13 @@
 import React from 'react'
 
+// Components
+import Logo from "../components/Logo.jsx";
+
 const NotFound = () => {
   return (
     <div className="login">
       <div className="form-container">
-        <img src="../assets/logos/logo_yard_sale.svg" alt="logo" className="logo" />
+        <Logo />
 
         <h1 className="title">Sorry</h1>
         <p className="subtitle">Page not found :(</p>
