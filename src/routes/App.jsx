@@ -19,6 +19,7 @@ import CreateAccount from "../pages/CreateAccount.jsx";
 import MyAccount from "../pages/MyAccount.jsx";
 import NewPassword from "../pages/NewPassword.jsx";
 import SendEmail from "../pages/SendEmail.jsx";
+import PasswordRecovery from "../pages/PasswordRecovery.jsx";
 
 // Styles
 import "../styles/global.css";
@@ -32,7 +33,8 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/create-account" element={<CreateAccount />} />
           <Route path="/password" element={<NewPassword />} />
-          <Route path="/recovery-password" element={<SendEmail />} />
+          <Route path="/password-recovery" element={<PasswordRecovery />} />
+          <Route path="/send-email" element={<SendEmail />} />
           <Route path="/products" element={<Products />} />
           <Route path="/my-order" element={<MyOrder />} />
           <Route path="/cart" element={<Cart />} />

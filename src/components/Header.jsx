@@ -40,7 +40,7 @@ const Header = () => {
         <ul>
           <li className="navbar-email">example@example.com</li>
           <li className="navbar-shoping-cart">
-            <img src="./icons/icon_shopping_cart.svg" alt="cart" />
+            <img src="../assets/icons/icon_shopping_cart.svg" alt="cart" />
             <div>2</div>
           </li>
         </ul>
