@@ -1,0 +1,49 @@
+@use "./vars";
+
+.CreateAccount {
+  width: 100%;
+  height: 100vh;
+  /* Alinea el contenido al centro tanto horizontal como vertical */
+  display: grid;
+  place-items: center;
+}
+
+.CreateAccount-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+.CreateAccount-form {
+  display: flex;
+  flex-direction: column;        
+}
+.CreateAccount-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* QUITAR ESTOS ESTILOS Y PASSARLOS A: styles, 
+PRIMERO VERIFICAR SI SE REUTILIZAN */
+.title {
+  font-size: var(--lg);
+  margin-bottom: 12px;
+  text-align: start;
+}
+
+.input-password, .input-email, .input-name {
+  margin-bottom: 20px;
+}
+@media (max-width: 640px) {
+  .CreateAccount-form {
+    height: 100%;
+    justify-content: space-between;
+  }
+  .CreateAccount-container {
+    height: 100%;
+  }
+}

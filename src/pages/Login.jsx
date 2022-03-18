@@ -13,7 +13,7 @@ const Login = () => {
       <div className="Login-container">
         <Logo />
 
-        <div>
+        <>
           <form action="/" className="form">
             <label for="email" className="label">
               Email address
@@ -44,7 +44,7 @@ const Login = () => {
             <a href="/"> Forgot my password </a>
           </form>
           <button className="secondary-button singup-button"> Sing up </button>
-        </div>
+        </>
       </div>
     </div>
   );

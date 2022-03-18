@@ -1,15 +1,14 @@
 import React from "react";
 
 // Styles
-import '../styles/styles.scss';
-import '../styles/Account.scss';
+import '../styles/CreateAccount.scss';
 
-const Account = () => {
+const CreateAccount = () => {
   return (
-    <div className="login">
-      <div className="form-container_pass">
-        <h1 className="title title_left">My account</h1>
-        <form action="/" className="form">
+    <div className="CreateAccount">
+      <div className="CreateAccount-container">
+        <h1 className="title">My account</h1>
+        <form action="/" className="CreateAccount-form">
           <div>
             <label for="name" className="label">
               Name
@@ -54,4 +53,4 @@ const Account = () => {
   );
 };
 
-export default Account;
+export default CreateAccount;
