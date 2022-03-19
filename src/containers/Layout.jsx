@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+
+// components
+import Header from "../components/Header.jsx";
 
 const Layout = ({ children }) => {
   return (
     <div className="Layout">
-      { children }
+      <Header />
+      {children}
     </div>
   );
-}
+};
 
 export default Layout;

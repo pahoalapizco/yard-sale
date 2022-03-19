@@ -4,7 +4,7 @@ import React from "react";
 import ShopingCart from "../components/ShopingCart.jsx";
 
 // Syles
-import "../styles/MyOrder.scss";
+import "../styles/Orders.scss";
 
 const products = new Array(3).fill({
   imgUrl:
@@ -20,7 +20,7 @@ const Cart = () => {
       <div className="my-order">
         <div className="my-order-container">
           <div className="title-container">
-            <img src="./icons/flechita.svg" alt="arrow" />
+            <img src="../assets/icons/flechita.svg" alt="arrow" />
             <h1 className="title">Shopping cart</h1>
           </div>
           <div className="my-order-content">

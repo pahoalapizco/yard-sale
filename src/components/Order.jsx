@@ -10,7 +10,7 @@ const Order = ({ date, articles, total }) => {
         <span> {articles} articles</span>
       </p>
       <p>$ {total}</p>
-      <img src="./icons/flechita.svg" alt="arrow" />
+      <img src="../assets/icons/flechita.svg" alt="arrow" />
     </div>
   );
 };

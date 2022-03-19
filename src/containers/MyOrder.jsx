@@ -1,7 +1,7 @@
 import React from "react";
 
 // Components
-import ShopingCart from "../components/ShopingCart.jsx";
+import OrderItem from "../components/OrderItem.jsx";
 
 // styles
 import "../styles/MyOrder.scss";
@@ -18,10 +18,10 @@ const today = new Date();
 
 const MyOrder = () => {
   return (
-    <div className="my-order">
-      <div className="my-order-container">
+    <div className="MyOrder">
+      <div className="MyOrder-container">
         <h1 className="title title_left">My Order</h1>
-        <div className="my-order-content">
+        <div className="MyOrder-content">
           <div className="order">
             <p>
               <span>
@@ -33,7 +33,7 @@ const MyOrder = () => {
             <p>$ {total}</p>
           </div>
           {products.map(({ imgUrl, price, name }) => (
-            <ShopingCart imgUrl={imgUrl} price={price} name={name} />
+            <OrderItem imgUrl={imgUrl} price={price} name={name} />
           ))}
         </div>
       </div>

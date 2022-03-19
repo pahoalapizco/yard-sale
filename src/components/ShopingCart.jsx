@@ -12,7 +12,7 @@ const ShopingCart = ({ imgUrl, price, name, origin = "order" }) => {
       <p>{name}</p>
       <p>$ {price} </p>
       {
-        origin !== "order" && <img src="./icons/icon_close.png" alt="close" />
+        origin !== "order" && <img src="../assets/icons/icon_close.png" alt="close" />
       }
       
     </div>

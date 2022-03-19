@@ -11,7 +11,7 @@ const OrderItem = ({ imgUrl, price, name }) => {
       </figure>
       <p>{name}</p>
       <p>$ {price} </p>
-      <img src="./icons/icon_close.png" alt="close" />
+      <img src="../assets/icons/icon_close.png" alt="close" />
     </div>
   );
 };
