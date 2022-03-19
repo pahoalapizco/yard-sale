@@ -13,7 +13,7 @@ const ProductItem = ({ imgUrl, price, name }) => {
           <p>{name}</p>
         </div>
         <figure>
-          <img src="./icons/bt_add_to_cart.svg" alt="Add to cart" />
+          <img src="../assets/icons/bt_add_to_cart.svg" alt="Add to cart" />
         </figure>
       </div>
     </div>
