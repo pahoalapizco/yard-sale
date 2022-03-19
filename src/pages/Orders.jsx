@@ -4,7 +4,7 @@ import React from "react";
 import Order from "../components/Order.jsx";
 
 // styles
-import '../styles/MyOrder.scss';
+import '../styles/Order.scss';
 
 const products = new Array(15).fill({
   articles: 6,
@@ -12,12 +12,12 @@ const products = new Array(15).fill({
   date: `${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}`,
 });
 
-const MyOrders = () => {
+const Orders = () => {
   return (
-    <div className="my-order">
-      <div className="my-order-container">
+    <div className="Orders">
+      <div className="Orders-container">
         <h1 className="title title_left">My Orders</h1>
-        <div className="my-order-content">
+        <div className="Orders-content">
           {products.map(({ articles, total, date }) => (
             <Order articles={articles} total={total} date={date} />
           ))}
@@ -27,4 +27,4 @@ const MyOrders = () => {
   );
 };
 
-export default MyOrders;
+export default Orders;

@@ -9,7 +9,6 @@ import Layout from "../containers/Layout.jsx";
 import Products from '../containers/Products.jsx';
 import MyOrder from './../containers/MyOrder';
 import Cart from './../containers/Cart';
-import MyOrders from "../containers/MyOrders.jsx";
 
 // Pages
 import Home from "../pages/Home.jsx";
@@ -20,6 +19,7 @@ import MyAccount from "../pages/MyAccount.jsx";
 import NewPassword from "../pages/NewPassword.jsx";
 import SendEmail from "../pages/SendEmail.jsx";
 import PasswordRecovery from "../pages/PasswordRecovery.jsx";
+import Orders from "../pages/Orders.jsx";
 
 // Styles
 import "../styles/global.css";
@@ -38,7 +38,7 @@ const App = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/my-order" element={<MyOrder />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/orders" element={<MyOrders />} />
+          <Route path="/orders" element={<Orders />} />
           <Route path="/account" element={<MyAccount />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

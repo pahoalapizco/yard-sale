@@ -1,0 +1,58 @@
+/* Component ***Order*** */
+.Order {
+  border-radius: 10px;
+  background-color: var(--text-input-field);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 0 24px;
+}
+.Order p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.Order p span:nth-child(1) {
+  font-weight: bold;
+  font-size: var(--md);
+}
+.Order p span:nth-child(2) {
+  color: var(--very-light-pink);
+  font-weight: 300px;
+  font-size: var(--sm);
+}
+.Order p:nth-child(2) {
+  text-align: end;
+  font-weight: bold;
+}
+.Order_group {
+  grid-template-columns: auto 1fr auto;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Component ***OrderItem*** */
+.OrderItem {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 16px;
+  margin-top: 20px;
+  align-items: center;
+}
+.OrderItem figure {
+  margin: 0;
+}
+.OrderItem figure img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.OrderItem p:nth-child(2) {
+  color: var(--very-light-pink);
+}
+.OrderItem p:nth-child(3) {
+  color: var(--black);
+  font-size: var(--md);
+  font-weight: bold;
+}

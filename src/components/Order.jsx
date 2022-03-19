@@ -1,8 +1,10 @@
 import React from "react";
 
+import '../styles/Order.scss';
+
 const Order = ({ date, articles, total }) => {
   return (
-    <div class="order order_group">
+    <div class="Order Order_group">
       <p>
         <span> {date}</span>
         <span> {articles} articles</span>
