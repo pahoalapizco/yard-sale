@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import Product from "../components/Product.jsx";
+import ProductItem from "../components/ProductItem.jsx";
 
 // styles
 import "../styles/Products.scss";
@@ -13,13 +13,13 @@ const products = new Array(15).fill({
   name: "bike"
 });
 
-const Products = () => {
+const ProductList = () => {
   return (
     <section class="main-container">
       <div class="cards-container">
         {
           products.map( ({ imgUrl, price, name }) => (
-            <Product imgUrl={imgUrl} price={price} name={name} />
+            <ProductItem imgUrl={imgUrl} price={price} name={name} />
           ))
         }
       </div>
@@ -27,4 +27,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ProductList;

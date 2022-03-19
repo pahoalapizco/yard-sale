@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 // Containers
 import Layout from "../containers/Layout.jsx";
-import Products from '../containers/Products.jsx';
 import MyOrder from './../containers/MyOrder';
 import Cart from './../containers/Cart';
 
@@ -35,7 +34,6 @@ const App = () => {
           <Route path="/password" element={<NewPassword />} />
           <Route path="/password-recovery" element={<PasswordRecovery />} />
           <Route path="/send-email" element={<SendEmail />} />
-          <Route path="/products" element={<Products />} />
           <Route path="/my-order" element={<MyOrder />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/orders" element={<Orders />} />
