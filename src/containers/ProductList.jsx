@@ -1,10 +1,10 @@
 import React from "react";
 
 // components
-import ProductItem from "../components/ProductItem.jsx";
+import ProductItem from "@components/ProductItem.jsx";
 
 // styles
-import "../styles/Products.scss";
+import "@styles/Products.scss";
 
 const products = new Array(15).fill({
   imgUrl:

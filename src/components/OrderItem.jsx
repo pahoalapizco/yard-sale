@@ -1,7 +1,10 @@
 import React from "react";
 
+// assets
+import iconClose from "@icons/icon_close.png";
+
 // styles
-import '../styles/Order.scss';
+import '@styles/Order.scss';
 
 const OrderItem = ({ imgUrl, price, name }) => {
   return (
@@ -11,7 +14,7 @@ const OrderItem = ({ imgUrl, price, name }) => {
       </figure>
       <p>{name}</p>
       <p>$ {price} </p>
-      <img src="../assets/icons/icon_close.png" alt="close" />
+      <img src={iconClose} alt="close" />
     </div>
   );
 };

@@ -1,10 +1,10 @@
 import React from "react";
 
 // Components
-import Order from "../components/Order.jsx";
+import Order from "@components/Order.jsx";
 
 // styles
-import '../styles/Order.scss';
+import '@styles/Order.scss';
 
 const products = new Array(15).fill({
   articles: 6,

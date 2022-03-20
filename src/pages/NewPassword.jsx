@@ -1,10 +1,10 @@
 import React from "react";
 
 //Components
-import Logo from '../components/Logo.jsx';
+import Logo from '@components/Logo.jsx';
 
 // styles
-import "../styles/NewPassword.scss";
+import "@styles/NewPassword.scss";
 
 const NewPassword = () => {
   return (

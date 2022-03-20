@@ -1,7 +1,13 @@
 import React from 'react'
 
 // Components
-import Logo from "../components/Logo.jsx";
+import Logo from "@components/Logo.jsx";
+
+// assets
+import notFound from "@images/404.png"
+
+// styles
+import "@styles/styles.scss";
 
 const NotFound = () => {
   return (
@@ -13,7 +19,7 @@ const NotFound = () => {
         <p className="subtitle">Page not found :(</p>
     
         <div className="email-image">
-            <img src="../assets/img/404.png" alt="404 - Not Found" />
+            <img src={notFound} alt="404 - Not Found" />
         </div>
 
         <button className="primary-button login-button">Go Home</button>

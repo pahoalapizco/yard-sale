@@ -1,5 +1,10 @@
 import React from "react";
 
+// assets
+import addToCart from "@icons/bt_add_to_cart.svg";
+
+import "@styles/ProductDetail.scss";
+
 const ProductInfo = () => {
   return (
     <>
@@ -19,7 +24,7 @@ const ProductInfo = () => {
         </p>
 
         <button class="primary-button add-to-cart-button">
-          <img src="../assets/icons/bt_add_to_cart.svg" alt="cart" />
+          <img src={addToCart} alt="cart" />
           Add to cart
         </button>
       </div>

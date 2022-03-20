@@ -1,10 +1,10 @@
 import React from "react";
 
 // Components
-import OrderItem from "../components/OrderItem.jsx";
+import OrderItem from "@components/OrderItem.jsx";
 
 // styles
-import "../styles/MyOrder.scss";
+import "@styles/MyOrder.scss";
 
 const products = new Array(15).fill({
   imgUrl:

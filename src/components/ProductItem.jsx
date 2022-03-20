@@ -1,5 +1,8 @@
 import React from "react";
 
+// assets
+import addToCart from "@icons/bt_add_to_cart.svg";
+
 const ProductItem = ({ imgUrl, price, name }) => {
   return (
     <div class="product-card">
@@ -13,7 +16,7 @@ const ProductItem = ({ imgUrl, price, name }) => {
           <p>{name}</p>
         </div>
         <figure>
-          <img src="../assets/icons/bt_add_to_cart.svg" alt="Add to cart" />
+          <img src={addToCart} alt="Add to cart" />
         </figure>
       </div>
     </div>

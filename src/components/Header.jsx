@@ -3,16 +3,19 @@ import React from "react";
 // Components
 import Logo from "./Logo.jsx";
 
+// assets
+import menu from "@icons/icon_menu.svg";
+import shoppingCart from "@icons/icon_shopping_cart.svg";
 // Styles
-import "../styles/Header.scss";
+import "@styles/Header.scss";
 
 const Header = () => {
   return (
     <nav>
-      <img src="../assets/icons/icon_menu.svg" alt="Menu" className="menu" />
+      <img src={menu} alt="Menu" className="menu" />
 
       <div className="navbar-left">
-        <Logo />
+        <Logo classname="nav-logo"/>
 
         <ul>
           <li>
@@ -40,7 +43,7 @@ const Header = () => {
         <ul>
           <li className="navbar-email">example@example.com</li>
           <li className="navbar-shoping-cart">
-            <img src="../assets/icons/icon_shopping_cart.svg" alt="cart" />
+            <img src={shoppingCart} alt="cart" />
             <div>2</div>
           </li>
         </ul>

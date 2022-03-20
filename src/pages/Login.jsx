@@ -1,11 +1,11 @@
 import React from "react";
 
 // Components
-import Logo from "../components/Logo.jsx";
+import Logo from "@components/Logo.jsx";
 
 // Styles
-// import "../styles/styles.scss";
-import "../styles/Login.scss";
+// import "@styles/styles.scss";
+import "@styles/Login.scss";
 
 const Login = () => {
   return (

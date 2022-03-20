@@ -1,10 +1,14 @@
 import React from "react";
 
 // Components
-import Logo from "../components/Logo.jsx";
+import Logo from "@components/Logo.jsx";
+
+// assets
+import email from "@icons/email.svg";
+
 // Styles
-// import "../styles/styles.scss";
-import "../styles/SendEmail.scss";
+// import "@styles/styles.scss";
+import "@styles/SendEmail.scss";
 
 const SendEmail = () => {
   return (
@@ -18,7 +22,7 @@ const SendEmail = () => {
         </p>
 
         <div className="email-image">
-          <img src="../assets/icons/email.svg" alt="email" />
+          <img src={email} alt="email" />
         </div>
 
         <button className="primary-button login-button">Login</button>

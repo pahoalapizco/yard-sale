@@ -1,9 +1,9 @@
 import React from 'react'
 
 // Components
-import Logo from '../components/Logo.jsx';
+import Logo from '@components/Logo.jsx';
 
-import '../styles/PasswordRecovery.scss';
+import '@styles/PasswordRecovery.scss';
 
 const PasswordRecovery = () => {
   return (

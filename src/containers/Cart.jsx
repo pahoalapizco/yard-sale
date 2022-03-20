@@ -1,10 +1,13 @@
 import React from "react";
 
 // Components
-import ShopingCart from "../components/ShopingCart.jsx";
+import ShopingCart from "@components/ShopingCart.jsx";
+
+// assets
+import flechita from "@icons/flechita.svg";
 
 // Syles
-import "../styles/Orders.scss";
+import "@styles/Orders.scss";
 
 const products = new Array(3).fill({
   imgUrl:
@@ -20,7 +23,7 @@ const Cart = () => {
       <div className="my-order">
         <div className="my-order-container">
           <div className="title-container">
-            <img src="../assets/icons/flechita.svg" alt="arrow" />
+            <img src={flechita} alt="arrow" />
             <h1 className="title">Shopping cart</h1>
           </div>
           <div className="my-order-content">

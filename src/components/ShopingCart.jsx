@@ -1,5 +1,8 @@
 import React from "react";
 
+// assets
+import iconClose from "@icons/icon_close.png";
+
 const ShopingCart = ({ imgUrl, price, name, origin = "order" }) => {
   return (
     <div className="shopping-cart">
@@ -12,7 +15,7 @@ const ShopingCart = ({ imgUrl, price, name, origin = "order" }) => {
       <p>{name}</p>
       <p>$ {price} </p>
       {
-        origin !== "order" && <img src="../assets/icons/icon_close.png" alt="close" />
+        origin !== "order" && <img src={iconClose} />
       }
       
     </div>
