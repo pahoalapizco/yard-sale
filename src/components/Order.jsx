@@ -8,7 +8,7 @@ import '@styles/Order.scss';
 
 const Order = ({ date, articles, total }) => {
   return (
-    <div class="Order Order_group">
+    <div className="Order Order_group">
       <p>
         <span> {date}</span>
         <span> {articles} articles</span>

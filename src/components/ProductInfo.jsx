@@ -13,7 +13,7 @@ const ProductInfo = () => {
         alt="Bike"
       />
 
-      <div class="ProductInfo">
+      <div className="ProductInfo">
         <p>$ 120.00</p>
         <p>Bike</p>
         <p>
@@ -23,7 +23,7 @@ const ProductInfo = () => {
           incidunt!
         </p>
 
-        <button class="primary-button add-to-cart-button">
+        <button className="primary-button add-to-cart-button">
           <img src={addToCart} alt="cart" />
           Add to cart
         </button>

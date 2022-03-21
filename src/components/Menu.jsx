@@ -5,20 +5,20 @@ import '@styles/Menu.scss';
 
 const Menu = () => {
   return (
-    <div class="Menu">
+    <div classNameName="Menu">
       <ul>
         <li>
-          <a href="/" class="title">
+          <a href="/" className="title">
             My orders
           </a>
         </li>
         <li>
-          <a href="/" class="title">
+          <a href="/" className="title">
             My acount
           </a>
         </li>
         <li>
-          <a href="/" class="title">
+          <a href="/" className="title">
             Sing out
           </a>
         </li>

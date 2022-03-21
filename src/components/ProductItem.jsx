@@ -5,12 +5,12 @@ import addToCart from "@icons/bt_add_to_cart.svg";
 
 const ProductItem = ({ imgUrl, price, name }) => {
   return (
-    <div class="product-card">
+    <div className="product-card">
       <img
         src={imgUrl}
         alt={name}
       />
-      <div class="producto-info">
+      <div className="producto-info">
         <div>
           <p>$ {price}</p>
           <p>{name}</p>
