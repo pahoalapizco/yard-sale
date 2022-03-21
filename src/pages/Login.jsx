@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 // Components
 import Logo from "@components/Logo.jsx";
@@ -8,42 +8,53 @@ import Logo from "@components/Logo.jsx";
 import "@styles/Login.scss";
 
 const Login = () => {
+  const formRef = useRef(null);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(formRef.current);
+    const data = {
+      username: formData.get("email"),
+      password: formData.get("password"),
+    };
+    console.log("🚀 ~ file: Login.jsx ~ line 19 ~ handleSubmit ~ data", data);
+  };
+
   return (
     <div className="Login">
       <div className="Login-container">
         <Logo />
-
         <>
-          <form action="/" className="form">
-            <label for="email" className="label">
+          <form action="/" className="form" ref={formRef}>
+            <label htmlFor="email" className="label">
               Email address
             </label>
             <input
               type="email"
-              id="email"
+              name="email"
               placeholder="example@example.com"
               className="input input-email"
             />
 
-            <label for="new-password" className="label">
+            <label htmlFor="password" className="label">
               Password
             </label>
             <input
               type="password"
-              id="new-password"
+              name="password"
               placeholder="********"
               className="input input-password"
             />
-            <input
+            <button
               type="submit"
-              name=""
-              id=""
-              value="Login"
               className="primary-button login-button"
-            />
+              onClick={handleSubmit}
+            >
+              Log in
+            </button>
             <a href="/"> Forgot my password </a>
           </form>
-          <button className="secondary-button singup-button"> Sing up </button>
+          <button className="secondary-button singup-button">Sing up</button>
         </>
       </div>
     </div>

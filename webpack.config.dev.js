@@ -23,6 +23,7 @@ module.exports = {
       "@components": path.resolve(__dirname, "src/components"),
       "@containers": path.resolve(__dirname, "src/containers"),
       "@pages": path.resolve(__dirname, "src/pages"),
+      "@hooks": path.resolve(__dirname, "src/hooks"),
       "@icons": path.resolve(__dirname, "src/assets/icons"),
       "@images": path.resolve(__dirname, "src/assets/img"),
       "@logos": path.resolve(__dirname, "src/assets/logos"),

@@ -2,8 +2,8 @@
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 24rem);
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 20px;
   place-content: center;
 }
 .product-card {

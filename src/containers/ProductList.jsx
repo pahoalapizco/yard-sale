@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import React from "react";
+
+// hooks
+import useGetProducts from "@hooks/useGetProducts";
 
 // components
 import ProductItem from "@components/ProductItem.jsx";
@@ -10,22 +12,14 @@ import "@styles/Products.scss";
 const API = "https://api.escuelajs.co/api/v1/products";
 
 const ProductList = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(async () => {
-    const response = await axios(API);
-    setProducts(response.data);
-    
-  }, []);
+  const products = useGetProducts(API);
 
   return (
     <section className="main-container">
       <div className="cards-container">
-        {
-          products.map( ({ id, images, price, title }) => (
-            <ProductItem key={id} imgUrl={images[0]} price={price} name={title} />
-          ))
-        }
+        {products.map(({ id, images, price, title }) => (
+          <ProductItem key={id} imgUrl={images} price={price} name={title} />
+        ))}
       </div>
     </section>
   );
