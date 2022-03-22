@@ -24,10 +24,11 @@ module.exports = {
       "@containers": path.resolve(__dirname, "src/containers"),
       "@pages": path.resolve(__dirname, "src/pages"),
       "@hooks": path.resolve(__dirname, "src/hooks"),
+      "@context": path.resolve(__dirname, "src/context"),
       "@icons": path.resolve(__dirname, "src/assets/icons"),
       "@images": path.resolve(__dirname, "src/assets/img"),
       "@logos": path.resolve(__dirname, "src/assets/logos"),
-      "@styles": path.resolve(__dirname, "src/styles")  ,
+      "@styles": path.resolve(__dirname, "src/styles"),
     }
   },
   mode: "development",
