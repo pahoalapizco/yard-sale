@@ -12,7 +12,7 @@ import '@styles/ProductDetail.scss';
 const ProductDetail = () => {
   return (
     <aside className="ProductDetail">
-      <div className="ProductDetail-close">
+      <div className="ProductDetail-close pointer">
         <img src={iconClose} alt="close" />
       </div>
       <ProductInfo />

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 
 // Components
 import ShopingCart from "@components/ShopingCart.jsx";
+
+// Context
+import AppContext from "@context/AppContext";
 
 // assets
 import flechita from "@icons/flechita.svg";
@@ -9,28 +12,30 @@ import flechita from "@icons/flechita.svg";
 // Syles
 import "@styles/Orders.scss";
 
-const products = new Array(3).fill({
-  imgUrl:
-    "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-  price: 120.0,
-  name: "bike",
-});
-const total = products.reduce((total, prod) => total + prod.price, 0);
-
 const Cart = () => {
+  const {
+    state: { cart },
+    openCloseCart,
+  } = useContext(AppContext);
+  const total = cart.reduce((total, prod) => total + prod.price, 0);
+
   return (
-    <aside className="product-detail">
-      <div className="my-order">
-        <div className="my-order-container">
-          <div className="title-container">
+    <aside className="Cart">
+      <div className="Orders">
+        <div className="Orders-container">
+          <div className="title-container pointer" onClick={openCloseCart}>
             <img src={flechita} alt="arrow" />
             <h1 className="title">Shopping cart</h1>
           </div>
-          <div className="my-order-content">
-            {products.map(({ imgUrl, price, name }) => (
-              <ShopingCart imgUrl={imgUrl} price={price} name={name} origin="cart"/>
+          <div className="Orders-content">
+            {cart.map((item, index) => (
+              <ShopingCart 
+                indexValue={index}
+                key={`ShopingCartId-${index}`}
+                product={item}
+              />
             ))}
-            <div className="order order-cart">
+            <div className="order-cart">
               <p>
                 <span> Total </span>
               </p>

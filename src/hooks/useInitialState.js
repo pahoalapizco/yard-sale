@@ -6,6 +6,7 @@ const initialState = {
 
 const useInitialState = () => {
   const [state, setState] = useState(initialState);
+  const [toggleOrders, setToggleOrders] = useState(false);
 
   const addToCart = (payload) => {
     setState({
@@ -14,7 +15,18 @@ const useInitialState = () => {
     });
   };
 
-  return { state, addToCart };
+  const removeFromCart = (indexValue) => {
+    setState({
+      ...state,
+      cart: state.cart.filter((item, index) => index !== indexValue)
+    })
+  }
+
+  const openCloseCart = () => {
+    setToggleOrders(!toggleOrders);
+  }
+
+  return { state, addToCart, removeFromCart, toggleOrders, openCloseCart };
 };
 
 export default useInitialState;

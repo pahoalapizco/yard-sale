@@ -104,7 +104,9 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
-
+.pointer {
+  cursor: pointer;
+}
 @media (max-width: 640px) {
   .logo {
     display: block;

@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 // Components
 import Logo from "./Logo.jsx";
 import Menu from "./Menu.jsx";
+import Cart from "../containers/Cart.jsx";
+// Context
+import AppContext from "@context/AppContext";
 
 // assets
 import menu from "@icons/icon_menu.svg";
@@ -11,10 +14,23 @@ import shoppingCart from "@icons/icon_shopping_cart.svg";
 import "@styles/Header.scss";
 
 const Header = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false);  
+
+  const {
+    state: { cart },
+    toggleOrders,
+    openCloseCart,
+  } = useContext(AppContext);
+  const totalCart = cart.length;
 
   const handleToggle = () => {
     setToggle(!toggle);
+    setToggleOrders(false);
+  };
+
+  const handleToggleOrders = () => {
+    openCloseCart();
+    setToggle(false);
   };
   return (
     <>
@@ -48,16 +64,17 @@ const Header = () => {
 
         <div className="navbar-right">
           <ul>
-            <li className="navbar-email" onClick={handleToggle}>
+            <li className="navbar-email pointer" onClick={handleToggle}>
               example@example.com
             </li>
-            <li className="navbar-shoping-cart">
+            <li className="navbar-shoping-cart pointer" onClick={handleToggleOrders}>
               <img src={shoppingCart} alt="cart" />
-              <div>2</div>
+              {totalCart > 0 && <div>{totalCart}</div>}
             </li>
           </ul>
         </div>
         {toggle && <Menu />}
+        {toggleOrders && <Cart />}
       </nav>
     </>
   );
